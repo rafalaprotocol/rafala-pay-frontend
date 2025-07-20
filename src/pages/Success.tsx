@@ -1,4 +1,6 @@
-export default function Success() {
+import React from 'react';
+
+export default function Success(): React.ReactElement {
   return (
     <div className="py-20 text-center">
       <h2 className="text-3xl font-display mb-4">Payment Successful</h2>
