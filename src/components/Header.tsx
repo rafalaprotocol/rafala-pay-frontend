@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Header() {
   return (

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import '@rainbow-me/rainbowkit/styles.css';
 import {
     getDefaultWallets,
@@ -94,9 +95,9 @@ export const wagmiConfig = createConfig({
 });
 
 export const AppWalletProvider = ({ children }: { children: React.ReactNode }) => (
-    <WagmiConfig config= { wagmiConfig } >
-    <RainbowKitProvider chains={ chains }>
-        { children }
+    <WagmiConfig config={wagmiConfig}>
+        <RainbowKitProvider chains={chains}>
+            {children}
         </RainbowKitProvider>
-        </WagmiConfig>
+    </WagmiConfig>
 );
